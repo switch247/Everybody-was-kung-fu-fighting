@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  display:grid;
+  place-items: center;
+}
+.main {
+  display: inline-block;
+  /* take up width of children */
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.ui {
+  position: absolute;
+  display: flex;
+  /* height: 30px; */
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding: 2px;
+}
+.pl1 {
+  background: yellow;
+  width: 100%;
+  height: 30px;
+  position: relative;
+  border: 4px solid white;
+  /* padding: 1em; */
+}
+.timer {
+  background: black;
+  width: 100px;
+  height: 50px;
+  padding: 1em;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  /* hor */
+  align-items: center;
+  /* vert */
+  font-size: 32px;
+  color: beige;
+}
+.pl2 {
+  position: relative;
+  background: yellow;
+  width: 100%;
+  height: 30px;
+  border: 4px solid white;
+  /* padding: 1em; */
+}
+#enemyhealth {
+  background: rgb(97, 97, 228);
+  /* height: 30px; */
+  /* width: 100%; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+#playerhealth {
+  background: rgb(180, 46, 46);
+  /* height: 30px;
+  width: 100%; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+#winner {
+  position: absolute;
+  color: rgb(24, 22, 22);
+  display: flex;
+  justify-content: center;
+  /* hor */
+  align-items: center;
+  /* vert */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 50px;
+  text-transform: uppercase;
+}
