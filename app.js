@@ -275,7 +275,8 @@ if(enemy.health<=0 || player.health<=0 ){
 
 }
 
-animate()
+setTimeout(animate(), 400);
+
 
 window.addEventListener('keydown', (event) => {
     // console.log(event.key)
@@ -364,9 +365,13 @@ window.addEventListener('keyup', (event) => {
 })
 
  function PlaySound () {
-var audio = new Audio('./Down.mp3');
-audio.loop = false;
-audio.play();
-audio.controls=true;
+
+    var source = "Down.mp3"
+    var audio = new Audio();
+    // no event listener needed here
+    audio.src = source;
+    audio.autoplay = true;
+    audio.play(); 
+
 } 
-//PlaySound ()
+PlaySound ()
