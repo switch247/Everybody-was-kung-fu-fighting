@@ -275,7 +275,8 @@ if(enemy.health<=0 || player.health<=0 ){
 
 }
 
-animate()
+setTimeout(animate(), 400);
+
 
 window.addEventListener('keydown', (event) => {
     // console.log(event.key)
